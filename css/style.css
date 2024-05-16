@@ -14,114 +14,169 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque:'Squada One', cursive; 
 }
+
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
   
 
 body{
-    background-color: #010137;
+    background-color: var(--cor1);
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-/* FORM */
-
-#form-container{
-    background-color: #FABB4C;
-    border-radius: 20px;
-    box-shadow: .5px 10px 15px rgba(150, 147, 147, 0.2);
-    margin: 25px auto;
-    padding: 25px;
+.container{
+    padding-top: 130px;
+    padding-bottom: 150px;
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    gap: 40px;
 }
 
-@media(min-width: 768px) {
-    form-container{
-        margin: 50px auto;
-        padding: 50px;
-    }
+.left{
+    margin-bottom: 50px;
 }
 
-#form-container h2{
-    font-family: var(--fonte-destaque);
-    font-size: 40px;
-    font-weight: 900;
-    margin-bottom: 30px;
-    color: #000;
+.logo{
+    display: block;
+   width: 50%;
+    height: 80%;
+    margin: -30px;
+    padding-bottom: 22px;
+    margin-left: 140px;
 }
 
-#form-container a{
-    color: #222;
-    transition: .5s;
+h2{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: #1c1e21;
+    max-width: 500px;
+    margin-left: 80px;
 }
 
-#form-container a:hover{
-    color: #6C63FF;
+form {
+    padding: 15px 15px 24px 15px;
+    background-color: var(--cor0);
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-#form-container form{
-    padding-bottom: 0;
+
+
+form a, input, button{
+    display: block;
 }
 
-#form-container .form-control{
-    border: none;
-    border-bottom: 1px solid #ccc;
-    border-radius: 0;
-}
-
-#form-container .form-control{
-    background-color: #ebe0e0;
-}
-
-#form-container .form-control:focus{
-    box-shadow: none;
-}
-
-#form-container .form-floating label{
-    color: #a09898;
-}
-
-#form-container .form-floating > .form-control:focus~label{
-    color: #222;
-}
-
-#form-container input[type="submit"],
-#form-container input[type="checkbox"]:checked{
-    background-color: #010137;
-    border-color: #010137;
-}
-
-.form-control input{
-    border-radius: 30px;
-}
-
-.btn.btn-primary {
+input{
     width: 100%;
-    margin-top: 25px;
+    margin-top: 12px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dddfe2;
+    outline: none;
 }
 
-@media(min-width: 768px) {
-    .btn.btn-primary {
-        width: auto;
-    }
+input:focus{
+    border-color: #1877F2;
+    box-shadow: 0 0 0 2px #fff;
+    caret-color: #1877F2;
 }
 
-/* IMAGE */
-
-.row.align-items-center{
-    align-content: center;
-    height: 100%;
-    padding: 50px;
+input[placeholder]{
+    font-weight: 100;
 }
 
-.col-md-6.order-md-1{
-    padding-top: 50px;
+input::placeholder{
+    font-size: 16px;
+    color: #90949C;
 }
 
-@media(min-width: 768px){
-    .col-md-6.order-md-1{
-    padding-top: 50px;
-    }
-}
-
-#link-container{
+form a{
+    font-size: 15px;
+    color: #1877F2;
     text-align: center;
-    padding-top: 50px;
+    margin-top: 15px;
+    text-decoration: none;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #DADDE1;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+.btn-open, 
+.btn-create-account{
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition: 200ms cubic-bezier(.08, 0.55, 0.55, 1);
+}
+
+.btn-open{
+    font-size: 20px;
+    background-color: #1877F2;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-open:hover{
+    background-color: #3084f3;
+}
+
+.btn-create-account{
+    font-size: 15px;
+    background-color: #3abe20;
+}
+
+.btn-create-account:hover{
+    background-color: #3aa325;
+}
+
+.btn-create-account{
+    font-size: 18px;
+    background-color: #3abe20;
+    margin: 0 auto;
+    margin-top: 22px;
+}
+
+p, p > a{
+    font-size: 15px;
+    color: #1C1E21;
+    margin: 28px 0 0 0;
+}
+
+p > a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p > a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: #fff;
+    font-size: 10px;
+    color: #737373;
+    margin-right: -50px;
+    margin-left: -50px;
+    text-align: center;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 
