@@ -1,17 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
-
-.squada-one-regular {
-    font-family: "Squada One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  :root {
+ :root {
     --cor0: #010137;
     --cor1: #FABB4C;
     --cor2: white;
     --cor3: black;
-    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-padrao: "Poppins", sans-serif;
     --fonte-destaque:'Squada One', cursive; 
 }
 
@@ -24,160 +16,122 @@
   
 
 body{
-    background-color: var(--cor1);
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.container{
-    padding-top: 130px;
-    padding-bottom: 150px;
-    max-width: 950px;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    align-items: center;
-    gap: 40px;
-}
-
-.left{
-    margin-bottom: 50px;
-}
-
-.logo{
-    display: block;
-   width: 50%;
-    height: 80%;
-    margin: -30px;
-    padding-bottom: 22px;
-    margin-left: 140px;
-}
-
-h2{
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 30px;
-    color: #1c1e21;
-    max-width: 500px;
-    margin-left: 80px;
-}
-
-form {
-    padding: 15px 15px 24px 15px;
-    background-color: var(--cor0);
-    border-radius: 7px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-
-
-form a, input, button{
-    display: block;
-}
-
-input{
-    width: 100%;
-    margin-top: 12px;
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid #dddfe2;
-    outline: none;
-}
-
-input:focus{
-    border-color: #1877F2;
-    box-shadow: 0 0 0 2px #fff;
-    caret-color: #1877F2;
-}
-
-input[placeholder]{
-    font-weight: 100;
-}
-
-input::placeholder{
-    font-size: 16px;
-    color: #90949C;
-}
-
-form a{
-    font-size: 15px;
-    color: #1877F2;
-    text-align: center;
-    margin-top: 15px;
-    text-decoration: none;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #DADDE1;
-}
-
-form a:hover{
-    text-decoration: underline;
-}
-
-.btn-open, 
-.btn-create-account{
-    font-weight: bold;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    transition: 200ms cubic-bezier(.08, 0.55, 0.55, 1);
-}
-
-.btn-open{
-    font-size: 20px;
-    background-color: #1877F2;
-    width: 100%;
-    margin-top: 15px;
-}
-
-.btn-open:hover{
-    background-color: #3084f3;
-}
-
-.btn-create-account{
-    font-size: 15px;
-    background-color: #3abe20;
-}
-
-.btn-create-account:hover{
-    background-color: #3aa325;
-}
-
-.btn-create-account{
-    font-size: 18px;
-    background-color: #3abe20;
-    margin: 0 auto;
-    margin-top: 22px;
-}
-
-p, p > a{
-    font-size: 15px;
-    color: #1C1E21;
-    margin: 28px 0 0 0;
-}
-
-p > a{
-    font-weight: bold;
-    text-decoration: none;
-}
-
-p > a:hover{
-    text-decoration: underline;
-}
-
-footer{
-    background-color: #fff;
-    font-size: 10px;
-    color: #737373;
-    margin-right: -50px;
-    margin-left: -50px;
-    text-align: center;
-    height: 210px;
+    background: url("../img/Terrain\ de\ foot\ fantastique\ dans\ l\'espace.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: var(--fonte-padrao);
+}
+
+/* Tela de login */
+
+.container{
+    width: 420px;
+    background: transparent;
+    border: 2px solid #010137;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+
+img{
+    width: 150px;
+    height: 160px;
+    display: block;
+    position: relative;
+    left: 90px;
+}
+
+.input-container{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-container input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 40px 20px 20px;
+}
+
+.input-container input::placeholder{
+    color: #fff;
+}
+
+i{
+    position: absolute;
+    right: 24px;
+    top: 20%;
+    margin-top: 5px;
+    color: #010137;
+
+}
+
+.input-container a{
+    font-size: 16px;
+    margin-top: 16px;
+    color: #010137;
     text-decoration: none;
 }
+
+.input-container a{
+    display: block;
+    text-align: center;
+}
+
+
+.input-container a:hover{
+    text-decoration: underline;
+}
+
+.btn-open{
+    width: 100%;
+    height: 50px;
+    background-color: #010137;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+.btn-open:hover{
+    background-color: #060661;
+}
+
+.create-account{
+    width: 100%;
+    height: 50px;
+    background-color: #e79f23;
+    border: none;
+    border-radius: 10px;
+    color: var(--cor0);
+    font-weight: 500;
+    margin-top: 24px;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+}
+
+.create-account:hover{
+    background-color: #f1ad37;
+}
+
 
 
 
