@@ -61,3 +61,10 @@
     color: #3a3a79;
 }
 
+/* Section */
+
+.camp-ligue {
+    display: flex;
+}
+
+
