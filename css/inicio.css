@@ -15,6 +15,10 @@
     --fonte-destaque:'Squada One', cursive; 
 }
 
+body {
+    background-color: #dcd7d7;
+}
+
 .container-header {
     background-color: var(--cor1);
     display: flex;
@@ -35,34 +39,47 @@
     cursor: pointer;
 }
 
-.nav-header, ul  {
+.img-header img:hover {
+    transform: scale(1.2);
+}
+.nav-header {
     display: flex;
+    background-color: #1a1a94;
+    gap: 20px;
+}
+
+.nav-header ul {
+    display: inline-block;
     gap: 40px;
     cursor: pointer;
+    text-shadow: 2px 2px 5px #fff;
 }
 
 .nav-header, li {
-    font-size: 17px;
+    font-size: 20px;
     font-family: var(--fonte-padrao);
     font-weight: bold;
     color: var(--cor0);
+    
 }
 
 .nav-header, ul li:hover {
-   color: #3a3a79;
+  color: #1a1a94;
 }
 
 .socials {
     display: flex;
-    gap: 30px;
-    font-size: 30px;
+    gap: 40px;
+    font-size: 40px;
     color: var(--cor0);
     cursor: pointer;
+    text-shadow: 2px 2px 5px #fff;
 }
 
 
 .socials i:hover {
-    color: #3a3a79;
+    color: #282876;
+    transform: scale(1.2);
 }
 
 
@@ -73,9 +90,10 @@
     background-color: #111152;
     display: flex;
     margin: 20px;
-    padding: 20px;
+    padding: 50px;
     justify-content: center;
     align-items: center;
+    box-shadow: 5px 5px 5px black;
 }
 
 
@@ -89,6 +107,10 @@
     cursor: pointer;
 }
 
+.camp-b img:hover {
+    transform: scale(1.2);
+}
+
 .camp-b p {
     text-align: center;
    font-size: 20px;
@@ -99,7 +121,7 @@
 }
 
 .camp-b p:hover {
-    color: #dabe8e;
+    color: #caa566;
 }
 
 /* Section - 2 */
